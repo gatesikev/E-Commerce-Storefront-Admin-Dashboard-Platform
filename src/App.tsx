@@ -1,9 +1,10 @@
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import HomePage from './pages/HomePage';
+import LoginPage from './pages/LoginPage';
 import { UserRoute, AdminRoute } from './routes/ProtectedRoutes';
 
-function LoginPage() { return <div className="p-10 text-center text-gray-400">Login page — coming next</div>; }
+
 function CartPage() { return <div className="p-10 text-center text-gray-400">Cart — coming next</div>; }
 function CheckoutPage() { return <div className="p-10 text-center text-gray-400">Checkout — coming next</div>; }
 function ProfilePage() { return <div className="p-10 text-center text-gray-400">Profile — coming next</div>; }
