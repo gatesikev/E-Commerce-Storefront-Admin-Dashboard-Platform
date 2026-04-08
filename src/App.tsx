@@ -6,11 +6,11 @@ import ProductDetailPage from './pages/ProductDetailPage';
 import CartPage from './pages/CartPage';
 import CheckoutPage from './pages/CheckoutPage';
 import ProfilePage from './pages/ProfilePage';
+import AdminDashboard from './pages/admin/AdminDashboard';
+import AdminProductForm from './pages/admin/AdminProductForm';
 import { UserRoute, AdminRoute } from './routes/ProtectedRoutes';
 
-// Placeholders — will be replaced as we build each page
-function AdminPage() { return <div className="p-10 text-center text-gray-400">Admin Dashboard — coming next</div>; }
-function AdminProductForm() { return <div className="p-10 text-center text-gray-400">Product Form — coming next</div>; }
+
 
 export default function App() {
   return (
@@ -31,7 +31,7 @@ export default function App() {
 
         {/* Protected — Admin */}
         <Route element={<AdminRoute />}>
-          <Route path="/admin" element={<AdminPage />} />
+          <Route path="/admin" element={<AdminDashboard />} />
           <Route path="/admin/products/new" element={<AdminProductForm />} />
           <Route path="/admin/products/:id/edit" element={<AdminProductForm />} />
         </Route>
